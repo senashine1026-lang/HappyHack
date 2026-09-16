@@ -11,7 +11,9 @@ $(function ($) {
     loop: true,
   });
   $(".slider").slick({
-    autoplay: false,
+    autoplay: true,
+    arrows: true,
+    slidesToShow: 3,
     dots: true,
     infinite: true,
   });

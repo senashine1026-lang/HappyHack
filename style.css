@@ -253,10 +253,19 @@ navigation a:hover {
   width: 90%;
 }
 
+.slider {
+  width: 80%;
+}
+
 .slider-img {
-  width: 100%;
+  width: 400px;
   margin: 0 auto;
   object-fit: cover;
+}
+
+.slider .slick-prev::before,
+.slider .slick-next::before {
+  color: #333;
 }
 
 .access .container {
