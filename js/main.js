@@ -10,6 +10,17 @@ $(function ($) {
     interval: 3000,
     loop: true,
   });
+
+  $(window).scroll(function () {
+    var targetElement = $(".fadein").offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll > targetElement - windowHeight + 200) {
+      $(".fadein").css("opacity", 1);
+      $(".fadein").css("transform", "translateY(0)");
+    }
+  });
+
   $(".slider").slick({
     autoplay: true,
     arrows: true,
@@ -17,4 +28,12 @@ $(function ($) {
     dots: true,
     infinite: true,
   });
+});
+
+particleJS("particle-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 1 },
+    move: { speed: 7 },
+  },
 });
