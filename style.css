@@ -128,31 +128,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  margin-top: 50px;
 }
 
 .introduction-content-second {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   flex-direction: row-reverse;
+  margin-top: 50px;
 }
 
 .introduction-content img {
-  width: 425px;
-  height: 285px;
+  width: 500px;
 }
 
 .introduction-content-second img {
-  width: 425px;
-  height: 285px;
-}
-
-.introduction-content p {
-  font-size: 16px;
-  margin-top: 72px;
-  font-weight: 200;
+  width: 500px;
 }
 
 .sentence {
@@ -220,16 +212,17 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: relative;
   padding: 0 0 50px;
+  z-index: 0;
 }
 
 .courses {
   width: 100%;
   margin: 50px 0;
+  position: relative;
 }
 
-.particles-js {
+#particles-js {
   background-color: #bfd7ea;
   top: 0;
   left: 0;
@@ -351,19 +344,29 @@
   }
 }
 
+.images .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  width: 90%;
+}
+
 .slider {
-  width: 80%;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .slider-img {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
-  object-fit: cover;
 }
 
 .slider .slick-prev::before,
 .slider .slick-next::before {
   color: #333;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

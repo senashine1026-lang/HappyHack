@@ -12,13 +12,15 @@ $(function ($) {
   });
 
   $(window).scroll(function () {
-    var targetElement = $(".fadein").offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > targetElement - windowHeight + 200) {
-      $(".fadein").css("opacity", 1);
-      $(".fadein").css("transform", "translateY(0)");
-    }
+    $(".fadein").each(function () {
+      var targetElement = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > targetElement - windowHeight + 200) {
+        $(this).css("opacity", 1);
+        $(this).css("transform", "translateY(0)");
+      }
+    });
   });
 
   $(".slider").slick({
@@ -28,12 +30,12 @@ $(function ($) {
     dots: true,
     infinite: true,
   });
-});
 
-particleJS("particle-js", {
-  particles: {
-    number: { value: 80 },
-    size: { value: 1 },
-    move: { speed: 7 },
-  },
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 70 },
+      size: { value: 1 },
+      move: { speed: 7 },
+    },
+  });
 });
