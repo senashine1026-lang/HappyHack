@@ -26,9 +26,29 @@ $(function ($) {
   $(".slider").slick({
     autoplay: true,
     arrows: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     dots: true,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   particlesJS("particles-js", {

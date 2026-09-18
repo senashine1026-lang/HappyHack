@@ -80,7 +80,7 @@
 
 .firstview-img {
   width: 80%;
-  padding-top: 225px;
+  padding-top: 200px;
 }
 
 .firstview p {
@@ -92,7 +92,8 @@
 
 @media (max-width: 768px) {
   .firstview-img {
-    width: 100%;
+    width: 80%;
+    padding-top: 270px;
   }
   .firstview p {
     font-size: 24px;
@@ -170,6 +171,7 @@
   letter-spacing: 0.1em;
   border-radius: 10px;
   text-decoration: none;
+  animation: 0.3s;
 }
 
 .introduction a:hover {
@@ -193,11 +195,16 @@
     flex-direction: column;
   }
   .introduction-content-second {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .introduction-content img {
     width: 100%;
     max-width: 450px;
+    height: auto;
+  }
+  .introduction-content-second img {
+    width: 100%;
+    max-width: 380px;
     height: auto;
   }
   .introduction-content .sentence {
@@ -355,18 +362,19 @@
 .slider {
   margin: 0 auto;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .slider-img {
   width: 100%;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .slider .slick-prev::before,
 .slider .slick-next::before {
   color: #333;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
