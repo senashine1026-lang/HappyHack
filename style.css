@@ -80,20 +80,20 @@
 
 .firstview-img {
   width: 80%;
-  padding-top: 200px;
+  padding-top: 230px;
 }
 
 .firstview p {
   font-size: 40px;
   color: #ffffff;
-  padding-top: 25px;
+  padding-top: 30px;
   font-family: "Futura-BooOb1";
 }
 
 @media (max-width: 768px) {
   .firstview-img {
     width: 80%;
-    padding-top: 270px;
+    padding-top: 280px;
   }
   .firstview p {
     font-size: 24px;
@@ -171,7 +171,7 @@
   letter-spacing: 0.1em;
   border-radius: 10px;
   text-decoration: none;
-  animation: 0.3s;
+  transition: all 0.7s;
 }
 
 .introduction a:hover {
@@ -199,7 +199,7 @@
   }
   .introduction-content img {
     width: 100%;
-    max-width: 450px;
+    max-width: 380px;
     height: auto;
   }
   .introduction-content-second img {
@@ -283,6 +283,7 @@
   display: inline-block;
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.7s;
 }
 
 .class a:hover {
